@@ -4,37 +4,55 @@
   <script type="text/javascript" src="jquery-3.3.1.js" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      // $(".hide").click(function(){
-      //     $(".message").hide(1000, function(){
-      //       console.log("i am hidden");
-      //
-      //     });
-      // });
-      //
-      // $(".show").click(function(){
-      //     $(".message").show();
-      // });
+      
+    //   $(".clickme").click(function(){
+    //     var message = $(".message").text();
+    //   console.log(message);
+    //   });
+    // });
 
-      // $(".toggle").click(function(){
-      //     $(".message").toggle(800);
-      // });
+    //   $(".clickme").click(function(){
+    //     var message = $(".message").html();
+    //   console.log(message);
+    //   });
 
-      $(".toggle").click(function(){
-        $(".message").append("Suphanut");
+    // });
+
+    // $(".clickme").click(function(){
+    //     var username = $(".username").val();
+    //     var password = $(".password").val();
+
+    //     if(username == ""){
+    //       alert('Please input username');
+    //     }
+    //     else{
+    //       console.log(username);
+    //       console.log(password);
+    //     }
+    //   });
+
+       $(".clickme").click(function(){
+        var link = $(".link").attr("href");
+      console.log(link);
       });
 
     });
+
   </script>
 
 </head>
 <body>
 
-<div class="message">Pairin Chinsoy</div>
-<!-- <div class="hide">Hide</div>
-<div class="show">Show</div> -->
-<!-- <div style="border:1px solid red;"> -->
+<!-- <div class="message">
+     Pairin Chinsoy
+     <strong> RIN </strong>
+</div> -->
 
-<div class="toggle">Toggle</div>
+  <a href="google.com" class="link">google.com</a>
 
+  <!-- Username : <input class="username" name="username"></input></br>
+  Passwor : <input class="password" name="password"></input></br> -->
+
+<button class="clickme">Login</button>
 </body>
 </html>
